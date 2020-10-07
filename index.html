@@ -5,16 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
-      <div>
-        <img class="icon" src="./assets/github.svg" alt="github" />
-        <img class="icon" src="./assets/linkedin.svg" alt="linkedin" />
-        <img class="icon" src="./assets/stack.svg" alt="stackoverflow" />
+      <div class="icon-container">
+        <a
+          class="icon"
+          href="https://www.linkedin.com/in/petra-almgren-8737b18a/"
+        >
+          <img src="./assets/linkedin.svg" alt="linkedin" />
+        </a>
+        <a class="icon" href="httsa://github.com/petrame">
+          <img src="./assets/github.svg" alt="github" />
+        </a>
+        <a class="icon" href="http://stackoverflow.com">
+          <img src="./assets/stack.svg" alt="stackoverflow" />
+        </a>
       </div>
+      <div class="header-text">
+        <h1 class="portfolio-owner">
+          Portfolio: <span class="portfolio-owner name">Petra Almgren</span>
+        </h1>
+        <p class="main-occupation">frontend developer</p>
+        <p class="sideline">+ software tester</p>
+      </div>
+      <img
+        class="profile-pic"
+        src="./assets/profile-pic.png"
+        alt="profile-pic"
+      />
     </header>
-    <section class="portfolio-section grey"></section>
+
+    <section class="portfolio-section grey about-me">
+      <div class="decoration-container">
+        <div class="decoration line"></div>
+        <div class="decoration dot"></div>
+      </div>
+      <p class="usp">Hello! Is it me you're looking for?</p>
+    </section>
     <section class="portfolio-section"></section>
     <section class="portfolio-section grey"></section>
     <section class="portfolio-section"></section>
