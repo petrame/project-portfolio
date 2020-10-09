@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg" />
+    <title>Petra Almgren | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -22,21 +23,21 @@
           class="icon"
           href="https://www.linkedin.com/in/petra-almgren-8737b18a/"
         >
-          <img src="./assets/linkedin.svg" alt="linkedin" />
+          <img class="icon-img" src="./assets/linkedin.svg" alt="linkedin" />
         </a>
         <a class="icon" href="httsa://github.com/petrame">
-          <img src="./assets/github.svg" alt="github" />
+          <img class="icon-img" src="./assets/github.svg" alt="github" />
         </a>
         <a class="icon" href="http://stackoverflow.com">
-          <img src="./assets/stack.svg" alt="stackoverflow" />
+          <img class="icon-img" src="./assets/stack.svg" alt="stackoverflow" />
         </a>
       </div>
       <div class="header-text">
         <h1 class="portfolio-owner">
           Portfolio: <span class="portfolio-owner name">Petra Almgren</span>
         </h1>
-        <p class="main-occupation">frontend developer</p>
-        <p class="sideline">+ software tester</p>
+        <p class="main-occupation">Frontend developer</p>
+        <p class="sideline">+ Software tester</p>
       </div>
       <img
         class="profile-pic"
@@ -45,18 +46,140 @@
       />
     </header>
 
-    <section class="portfolio-section grey about-me">
-      <div class="decoration-container">
-        <div class="decoration line"></div>
-        <div class="decoration dot"></div>
-      </div>
-      <p class="usp">Hello! Is it me you're looking for?</p>
-    </section>
-    <section class="portfolio-section"></section>
-    <section class="portfolio-section grey"></section>
-    <section class="portfolio-section"></section>
-    <section class="portfolio-section grey"></section>
-    <section class="portfolio-section"></section>
-    <footer></footer>
+    <main>
+      <section class="portfolio-section grey about-me">
+        <!-- <div class="decoration-container">
+          <div class="decoration line"></div>
+          <div class="decoration dot"></div>
+        </div> -->
+        <p class="about-me-text">
+          <span class="decoration line"></span>
+          <span class="decoration dot"></span>
+          Hello! Is it me you're looking for? Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Aliquam ac molestie magna. Sed eu tempor
+          justo. Nam facilisis ligula a porta bibendum.
+        </p>
+      </section>
+
+      <section class="portfolio-section tech">
+        <h2>Tech</h2>
+        <p>
+          CSS, Flexbox, <span class="red">JavaScript</span>, ES6, HTML,
+          Responsive Web Design, <span class="red">React</span>, Jest, Node.js,
+          <span class="red">Redux</span>
+          Accessibility, JSON, API:s, mob&shy;programming,
+          <span class="red">Python</span>, Git
+        </p>
+      </section>
+
+      <section class="portfolio-section grey featured-projects">
+        <div><h2>Featured projects</h2></div>
+        <h3>Other projects</h3>
+      </section>
+
+      <section class="portfolio-section my-thoughts">
+        <h2>My thoughts</h2>
+        <h3>More thoughts</h3>
+      </section>
+
+      <section class="portfolio-section grey skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-container">
+            <h3>Code</h3>
+            <ul>
+              <li>Javascript ES6</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>Pytest</li>
+            </ul>
+          </div>
+
+          <div class="skill-container">
+            <h3>Toolbox</h3>
+            <ul>
+              <li>GitHub</li>
+              <li>Bitbucket</li>
+              <li>npm</li>
+              <li>VS Code</li>
+              <li>PyCharm</li>
+              <li>Lighthouse</li>
+            </ul>
+          </div>
+
+          <div class="skill-container">
+            <h3>Upcoming</h3>
+            <ul>
+              <li>React</li>
+              <li>SASS</li>
+              <li>Mongo DB</li>
+              <li>Redux</li>
+            </ul>
+          </div>
+
+          <div class="skill-container">
+            <h3>More</h3>
+            <ul>
+              <li>Exploratory Testing</li>
+              <li>Test Automation</li>
+              <li>Scrum</li>
+              <li>ITIL</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section for-more">
+        <h2>for more</h2>
+        <div class="icon-container red">
+          <div class="wrapper">
+            <a
+              class="icon red"
+              href="https://www.linkedin.com/in/petra-almgren-8737b18a/"
+            >
+              <img
+                class="icon-img red"
+                src="./assets/linkedin-red.svg"
+                alt="linkedin"
+              />
+            </a>
+            <p class="icon-text">Linkedin</p>
+          </div>
+
+          <div class="wrapper">
+            <a class="icon red" href="httsa://github.com/petrame">
+              <img
+                class="icon-img red"
+                src="./assets/github-red.svg"
+                alt="github"
+              />
+            </a>
+            <p class="icon-text">Github</p>
+          </div>
+
+          <div class="wrapper">
+            <a class="icon red" href="http://stackoverflow.com">
+              <img
+                class="icon-img red"
+                src="./assets/stack-red.svg"
+                alt="stackoverflow"
+              />
+            </a>
+            <p class="icon-text">Stackoverflow</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2 class="footer-header">contact</h2>
+      <ul>
+        <li>Petra Almgren</li>
+        <li>+4672 565 56 66</li>
+        <li>petra.almgren@b3.se</li>
+      </ul>
+    </footer>
   </body>
 </html>

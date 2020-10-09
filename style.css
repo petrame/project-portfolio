@@ -1,5 +1,41 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0px;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    
+}
+
+h3 {
+    color: #FA382F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+p,
+ul {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -33,7 +69,7 @@ header {
     align-items: center;
 }
 
-.icon img {
+.icon-img {
     height: 17px;
     width: 17px;
     padding: 10px;
@@ -48,7 +84,6 @@ header {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.52px;
-    text-transform: uppercase;
 }
 
 .portfolio-owner.name {
@@ -57,18 +92,16 @@ header {
 }
 
 .main-occupation {
-    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 900;
     margin: -5px 0 -17px 0;
-    letter-spacing: 0px;
+    line-height: 1;
 }
 
 .sideline {
-    font-family: 'Montserrat', sans-serif;
+    
     font-size: 24px;
     font-weight: bold;
-    letter-spacing: 0px;
 }
 
 .profile-pic {
@@ -78,43 +111,126 @@ header {
     margin-bottom: -12px;
 }
 
-/* THE REST */
+/* MAIN CONTENT */
 
-.portfolio-section p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    letter-spacing: 0px;
+.portfolio-section {
+    padding: 36px;
+    text-align: center;    
 }
 
-.about-me {
-    padding-top: 65px;
-    display: flex;
-}
-
-.decoration-container {
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
-}
-
-.decoration {
+.portfolio-section h2 {
     background: #FA382F;
-}
-
-.decoration.line {
-    height: 3px;
-    width: 40px;
-}
-
-.decoration.dot {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    margin-left: -1px;
+    font-size: 22px;
+    display: inline-block;
+    margin-top: 22px;
+    padding: 3px 10px;
 }
 
 .grey {
     background: #F4F4F4;
+}
+
+.red {
+    color: #FA382F;
+}
+
+/* SECTION 1 - ABOUT ME */
+
+.about-me {
+    padding-top: 65px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-me-text {
+    text-align: justify;
+}
+
+.decoration {
+    background: #FA382F;
+    display: inline-block;
+}
+
+.line {    
+    height: 3px;
+    width: 40px;    
+    margin-bottom: 3px;   
+}
+
+.dot {    
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0 7px 0 -12px;
+}
+
+
+/* SECTION 2 - TECH */
+
+/* SECTION 3 - FEATURED PROJECTS */
+
+/* SECTION 4 - MY THOUGHTS */
+
+/* SECTION 5 - SKILLS */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-container {
+    width: 40%;
+    flex-grow: 1;
+}
+
+/* SECTION 6 - FOR MORE */
+
+.icon-container.red {
+    justify-content: space-evenly;    
+    max-width: 650px;
+    margin: auto;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 0 28px 0;
+}
+
+.icon.red {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #FA382F;
+    margin: 0 20px 0 20px;
+}
+.icon-img.red {
+    height: 22px;
+    width: 22px;
+    
+}
+
+.icon-text {
+    font-size: 11px;
+    color: #FA382F;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    background: #013D61;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 63px 0;
+}
+
+footer h3 {
+    font-size: 21px;
 }
 
 /* MEDIA QUERIES */
