@@ -19,12 +19,12 @@ h2 {
 
 h3 {
     color: #FA382F;
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 21px;
 }
 
 p,
-ul {
+ul,
+h4 {
     font-size: 17px;
     line-height: 1.6;
 }
@@ -37,11 +37,16 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
     cursor: pointer;
 }
 
 .grey {
     background: #F4F4F4;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
 }
 
 .red {
@@ -107,7 +112,7 @@ header {
 
 .main-occupation {
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 700;
     margin: -5px 0 -17px 0;
     line-height: 1;
 }
@@ -186,7 +191,7 @@ header {
 }
 
 .tags {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 9px;
     display: flex;
     margin: -10px 0 40px 0;
@@ -205,6 +210,47 @@ header {
 }
 
 /* SECTION 4 - MY THOUGHTS */
+
+.my-thoughts {
+    margin-bottom: 40px;
+}
+
+.my-thoughts img {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.date {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+.my-thoughts h3 {
+    margin: 100px 0 10px 0;
+}
+
+.my-thoughts h4 {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 21px;
+    margin: 0;
+}
+
+.my-thoughts p{
+    line-height: 1.9;
+    margin-top: 0;
+}
+
+.more-thoughts-article {
+    margin-top: -35px;
+}
+
+.more-thoughts {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 0;
+}
 
 /* SECTION 5 - SKILLS */
 
