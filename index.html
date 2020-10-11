@@ -18,38 +18,44 @@
 
   <body>
     <header>
-      <div class="icon-container">
-        <a
-          class="icon"
-          href="https://www.linkedin.com/in/petra-almgren-8737b18a/"
-        >
-          <img class="icon-img" src="./assets/linkedin.svg" alt="linkedin" />
-        </a>
-        <a class="icon" href="httsa://github.com/petrame">
-          <img class="icon-img" src="./assets/github.svg" alt="github" />
-        </a>
-        <a class="icon" href="http://stackoverflow.com">
-          <img class="icon-img" src="./assets/stack.svg" alt="stackoverflow" />
-        </a>
+      <div class="header-container max-width">
+        <div class="icon-container">
+          <a
+            class="icon"
+            href="https://www.linkedin.com/in/petra-almgren-8737b18a/"
+          >
+            <img class="icon-img" src="./assets/linkedin.svg" alt="linkedin" />
+          </a>
+          <a class="icon" href="httsa://github.com/petrame">
+            <img class="icon-img" src="./assets/github.svg" alt="github" />
+          </a>
+          <a class="icon" href="http://stackoverflow.com">
+            <img
+              class="icon-img"
+              src="./assets/stack.svg"
+              alt="stackoverflow"
+            />
+          </a>
+        </div>
+        <div class="header-text">
+          <h1 class="portfolio-owner">
+            Portfolio: <span class="portfolio-owner name">Petra Almgren</span>
+          </h1>
+          <p class="main-occupation">frontend<br />developer</p>
+          <p class="sideline">+ software tester</p>
+        </div>
+        <img
+          class="profile-pic"
+          src="./assets/profile-pic.png"
+          alt="profile-pic"
+        />
       </div>
-      <div class="header-text">
-        <h1 class="portfolio-owner">
-          Portfolio: <span class="portfolio-owner name">Petra Almgren</span>
-        </h1>
-        <p class="main-occupation">frontend developer</p>
-        <p class="sideline">+ software tester</p>
-      </div>
-      <img
-        class="profile-pic"
-        src="./assets/profile-pic.png"
-        alt="profile-pic"
-      />
     </header>
 
     <main>
       <!-- ABOUT ME SECTION -->
       <section class="portfolio-section grey about-me">
-        <p class="about-me-text">
+        <p class="about-me-text max-width">
           <span class="decoration line"></span>
           <span class="decoration dot"></span>
           Hello! Is it me you're looking for? Lorem ipsum dolor sit amet,
@@ -59,7 +65,7 @@
       </section>
 
       <!-- TECH SECTION -->
-      <section class="portfolio-section tech">
+      <section class="portfolio-section tech max-width">
         <h2>Tech</h2>
         <p>
           CSS, Flexbox, <span class="red">JavaScript</span>, ES6, HTML,
@@ -72,159 +78,164 @@
 
       <!-- FEATURED PROJECTS SECTION -->
       <section class="portfolio-section grey featured-projects">
-        <h2>Featured projects</h2>
-        <article class="weather-app">
-          <a href="" class="weather-app-link">
-            <img
-              class="project-img"
-              src="./assets/weather-2.png"
-              alt="Weather app"
-            />
-            <p class="summary">
-              <span class="red uppercase bold">Weather app.</span>&nbsp; Web app
-              built with JavaScript using data from an open weather API.&nbsp;
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-          <ul class="tags">
-            <li>JavaScript ES6</li>
-            <li>CSS3</li>
-            <li>HTML5</li>
-            <li>API</li>
-          </ul>
-        </article>
+        <div class="max-width">
+          <h2>Featured projects</h2>
+          <div class="projects">
+            <article class="featured-project">
+              <a href="https://github.com/petrame/project-weather-app">
+                <img
+                  class="project-img"
+                  src="./assets/weather-2.png"
+                  alt="Weather app"
+                />
+                <p class="summary">
+                  <span class="red uppercase bold">Weather app.</span>&nbsp; Web
+                  app built with JavaScript using data from an open weather
+                  API.&nbsp;
+                  <span class="red bold">&raquo;</span>
+                </p>
+              </a>
+              <ul class="tags">
+                <li>JavaScript ES6</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>API</li>
+              </ul>
+            </article>
 
-        <article class="cluedo-game">
-          <a href="https://github.com/petrame/project-cluedo">
-            <img
-              class="project-img"
-              src="./assets/cluedo2.png"
-              alt="Cluedo game"
-            />
-            <p class="summary">
-              <span class="red uppercase bold">Cluedo game.</span>
-              &nbsp; A responsive web page that randomly selects objects from
-              javascript arrays and objects. &nbsp;
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-          <ul class="tags">
-            <li>JavaScript ES6</li>
-            <li>CSS3</li>
-            <li>HTML5</li>
-          </ul>
-        </article>
+            <article class="featured-project">
+              <a href="https://github.com/petrame/project-cluedo">
+                <img
+                  class="project-img"
+                  src="./assets/cluedo2.png"
+                  alt="Cluedo game"
+                />
+                <p class="summary">
+                  <span class="red uppercase bold">Cluedo game.</span>
+                  &nbsp; A responsive web page that randomly selects objects
+                  from javascript arrays and objects. &nbsp;
+                  <span class="red bold">&raquo;</span>
+                </p>
+              </a>
+              <ul class="tags">
+                <li>JavaScript ES6</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+              </ul>
+            </article>
+          </div>
 
-        <h3>Other projects</h3>
-        <article class="food-review-website">
-          <a href="https://github.com/Technigo/project-food-turtles-1">
-            <p class="summary">
-              <span class="red uppercase bold">Food review website.</span>
-              &nbsp; Mob programming project. A restaurant listing page based on
-              the Zomato API. &nbsp;
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-          <ul class="tags">
-            <li>JavaScript ES6</li>
-            <li>CSS3</li>
-            <li>HTML5</li>
-            <li>Mob programming</li>
-          </ul>
-        </article>
+          <h3>Other projects</h3>
+          <article>
+            <a href="https://github.com/Technigo/project-food-turtles-1">
+              <p class="summary">
+                <span class="red uppercase bold">Food review website.</span>
+                &nbsp; Mob programming project. A restaurant listing page based
+                on the Zomato API. &nbsp;
+                <span class="red bold">&raquo;</span>
+              </p>
+            </a>
+            <ul class="tags">
+              <li>JavaScript ES6</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+              <li>Mob programming</li>
+            </ul>
+          </article>
 
-        <article class="business-site">
-          <a href="https://github.com/petrame/project-business-site">
-            <p class="summary">
-              <span class="red uppercase bold">Business site.</span>
-              &nbsp; A business site with a hero video, an accordion menu and a
-              sign up form. &nbsp;
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-          <ul class="tags">
-            <li>JavaScript ES6</li>
-            <li>CSS3</li>
-            <li>HTML5</li>
-          </ul>
-        </article>
+          <article>
+            <a href="https://github.com/petrame/project-business-site">
+              <p class="summary">
+                <span class="red uppercase bold">Business site.</span>
+                &nbsp; A business site with a hero video, an accordion menu and
+                a sign up form. &nbsp;
+                <span class="red bold">&raquo;</span>
+              </p>
+            </a>
+            <ul class="tags">
+              <li>JavaScript ES6</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+            </ul>
+          </article>
 
-        <article class="pizzeria-chat-bot">
-          <a href="https://github.com/petrame/project-pizza-bot">
-            <p class="summary">
-              <span class="red uppercase bold">Pizzeria bot.</span>
-              &nbsp; Pair programming project. A bot that receives a customer
-              order and returns a delivery message. &nbsp;
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-          <ul class="tags">
-            <li>JavaScript ES6</li>
-            <li>CSS3</li>
-            <li>HTML5</li>
-            <li>Pair programming</li>
-          </ul>
-        </article>
+          <article>
+            <a href="https://github.com/petrame/project-pizza-bot">
+              <p class="summary">
+                <span class="red uppercase bold">Pizzeria bot.</span>
+                &nbsp; Pair programming project. A bot that receives a customer
+                order and returns a delivery message. &nbsp;
+                <span class="red bold">&raquo;</span>
+              </p>
+            </a>
+            <ul class="tags">
+              <li>JavaScript ES6</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+              <li>Pair programming</li>
+            </ul>
+          </article>
 
-        <article class="News site">
-          <a href="https://github.com/petrame/project-news-site">
-            <p class="summary">
-              <span class="red uppercase bold">News site.</span>
-              &nbsp; A responsive web site with news cards. &nbsp;
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-          <ul class="tags">
-            <li>CSS3</li>
-            <li>HTML5</li>
-          </ul>
-        </article>
+          <article>
+            <a href="https://github.com/petrame/project-news-site">
+              <p class="summary">
+                <span class="red uppercase bold">News site.</span>
+                &nbsp; A responsive web site with news cards. &nbsp;
+                <span class="red bold">&raquo;</span>
+              </p>
+            </a>
+            <ul class="tags">
+              <li>CSS3</li>
+              <li>HTML5</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <!-- MY THOUGHTS SECTION -->
-      <section class="portfolio-section my-thoughts">
+      <section class="portfolio-section my-thoughts max-width">
         <h2>My thoughts</h2>
-        <article>
-          <a href="#">
-            <img src="./assets/home-office-336377_640.jpg" alt="" />
-            <p class="date red uppercase">aug 2020</p>
-            <h4 class="bold">Today the frontend bootcamp finally starts!</h4>
-            <p class="summary">
-              People assume that time is a strict progression of
-              cause-and-effect... but actually, from a non-linear,
-              non-subjective viewpoint, it's more like a big ball of
-              wibbly-wobbly... timey-wimey... stuff. Sweet, maybe... Passionate,
-              I suppose... But don't ever mistake that for nice. I don't want to
-              go. Allons-y!
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-        </article>
+        <div class="articles">
+          <article class="my-thoughts-article">
+            <a href="#">
+              <img src="./assets/home-office-336377_640.jpg" alt="" />
+              <p class="date red uppercase">aug 2020</p>
+              <h4 class="bold">Today the frontend bootcamp finally starts!</h4>
+              <p class="summary">
+                People assume that time is a strict progression of
+                cause-and-effect... but actually, from a non-linear,
+                non-subjective viewpoint, it's more like a big ball of
+                wibbly-wobbly... timey-wimey... stuff. Sweet, maybe...
+                Passionate, I suppose... But don't ever mistake that for nice. I
+                don't want to go. Allons-y!
+                <span class="red bold">&raquo;</span>
+              </p>
+            </a>
+          </article>
 
-        <article>
-          <a href="#">
-            <img src="./assets/bulletin-board-3127287_640.jpg" alt="" />
-            <p class="date red uppercase">mar 2020</p>
-            <h4 class="bold">
-              Today I took the first step on my way to becoming a developer.
-            </h4>
-            <p class="summary">
-              It is! It's the city of New New York! Strictly speaking, it's the
-              fifteenth New York since the original, so that makes it
-              New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New
-              York. You can spend the rest of your life with me, but I can't
-              spend the rest of mine with you. I have to live on. Alone. That's
-              the curse of the Time Lords.
-              <span class="red bold">&raquo;</span>
-            </p>
-          </a>
-        </article>
+          <article class="my-thoughts-article">
+            <a href="#">
+              <img src="./assets/bulletin-board-3127287_640.jpg" alt="" />
+              <p class="date red uppercase">mar 2020</p>
+              <h4 class="bold">
+                Today I took the first step on my way to becoming a developer.
+              </h4>
+              <p class="summary">
+                It is! It's the city of New New York! Strictly speaking, it's
+                the fifteenth New York since the original, so that makes it
+                New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New
+                York. You can spend the rest of your life with me, but I can't
+                spend the rest of mine with you. I have to live on. Alone.
+                That's the curse of the Time Lords.
+                <span class="red bold">&raquo;</span>
+              </p>
+            </a>
+          </article>
+        </div>
 
         <h3>More thoughts</h3>
-
         <article class="more-thoughts-article">
           <a href="#">
-            <img src=".assets" alt="" />
             <p class="more-thoughts">
               <span class="red uppercase">jan 2020.</span>
               <span class="bold">
@@ -237,7 +248,6 @@
 
         <article class="more-thoughts-article">
           <a href="#">
-            <img src=".assets" alt="" />
             <p class="more-thoughts">
               <span class="red uppercase">okt 2019.</span>
               <span class="bold">
@@ -251,50 +261,52 @@
 
       <!-- SKILLS SECTION -->
       <section class="portfolio-section grey skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-          <div class="skill-container">
-            <h3>Code</h3>
-            <ul>
-              <li>Javascript ES6</li>
-              <li>CSS3</li>
-              <li>HTML5</li>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>Pytest</li>
-            </ul>
-          </div>
+        <div class="max-width">
+          <h2>Skills</h2>
+          <div class="skills-container">
+            <div class="skill-container">
+              <h3>Code</h3>
+              <ul>
+                <li>Javascript ES6</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Pytest</li>
+              </ul>
+            </div>
 
-          <div class="skill-container">
-            <h3>Toolbox</h3>
-            <ul>
-              <li>GitHub</li>
-              <li>Bitbucket</li>
-              <li>npm</li>
-              <li>VS Code</li>
-              <li>PyCharm</li>
-              <li>Lighthouse</li>
-            </ul>
-          </div>
+            <div class="skill-container">
+              <h3>Toolbox</h3>
+              <ul>
+                <li>GitHub</li>
+                <li>Bitbucket</li>
+                <li>npm</li>
+                <li>VS Code</li>
+                <li>PyCharm</li>
+                <li>Lighthouse</li>
+              </ul>
+            </div>
 
-          <div class="skill-container">
-            <h3>Upcoming</h3>
-            <ul>
-              <li>React</li>
-              <li>SASS</li>
-              <li>Mongo DB</li>
-              <li>Redux</li>
-            </ul>
-          </div>
+            <div class="skill-container">
+              <h3>Upcoming</h3>
+              <ul>
+                <li>React</li>
+                <li>SASS</li>
+                <li>Mongo DB</li>
+                <li>Redux</li>
+              </ul>
+            </div>
 
-          <div class="skill-container">
-            <h3>More</h3>
-            <ul>
-              <li>Exploratory Testing</li>
-              <li>Test Automation</li>
-              <li>Scrum</li>
-              <li>ITIL</li>
-            </ul>
+            <div class="skill-container">
+              <h3>More</h3>
+              <ul>
+                <li>Exploratory Testing</li>
+                <li>Test Automation</li>
+                <li>Scrum</li>
+                <li>ITIL</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -348,7 +360,9 @@
       <ul>
         <li>Petra Almgren</li>
         <li>+4672 565 56 66</li>
-        <li>petra.almgren@b3.se</li>
+        <li>
+          <a href="petra.almgren@b3.se">petra.almgren@b3.se</a>
+        </li>
       </ul>
     </footer>
   </body>
