@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/favicon.svg" type="image/svg" />
     <title>Petra Almgren | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -38,11 +30,11 @@
           </a>
         </div>
         <div class="header-text">
-          <h1 class="portfolio-owner">
+          <h1 class="portfolio-owner" tabindex="0">
             Portfolio: <span class="portfolio-owner name">Petra Almgren</span>
           </h1>
-          <p class="main-occupation">frontend<br />developer</p>
-          <p class="sideline">+ software tester</p>
+          <p class="main-occupation" tabindex="0">frontend developer</p>
+          <p class="sideline" tabindex="0">+ software tester</p>
         </div>
         <img
           class="profile-pic"
@@ -55,9 +47,9 @@
     <main>
       <!-- ABOUT ME SECTION -->
       <section class="portfolio-section grey about-me">
-        <p class="about-me-text max-width">
-          <span class="decoration line"></span>
-          <span class="decoration dot"></span>
+        <p class="about-me-text max-width" tabindex="0">
+          <span class="decoration line" aria-hidden="true"></span>
+          <span class="decoration dot" aria-hidden="true"></span>
           Hello! Is it me you're looking for? Lorem ipsum dolor sit amet,
           consectetur adipiscing elit. Aliquam ac molestie magna. Sed eu tempor
           justo. Nam facilisis ligula a porta bibendum.
@@ -66,8 +58,8 @@
 
       <!-- TECH SECTION -->
       <section class="portfolio-section tech max-width">
-        <h2>Tech</h2>
-        <p>
+        <h2 tabindex="0">Tech</h2>
+        <p tabindex="0">
           CSS, Flexbox, <span class="red">JavaScript</span>, ES6, HTML,
           Responsive Web Design, <span class="red">React</span>, Jest, Node.js,
           <span class="red">Redux</span>
@@ -79,20 +71,20 @@
       <!-- FEATURED PROJECTS SECTION -->
       <section class="portfolio-section grey featured-projects">
         <div class="max-width">
-          <h2>Featured projects</h2>
+          <h2 tabindex="0">Featured projects</h2>
           <div class="projects">
             <article class="featured-project">
               <a href="https://github.com/petrame/project-weather-app">
                 <img
                   class="project-img"
-                  src="./assets/weather-2.png"
-                  alt="Weather app"
+                  src="./assets/weather.png"
+                  alt="project card"
                 />
                 <p class="summary">
                   <span class="red uppercase bold">Weather app.</span>&nbsp; Web
                   app built with JavaScript using data from an open weather
                   API.&nbsp;
-                  <span class="red bold">&raquo;</span>
+                  <span class="red bold" aria-hidden="true">&raquo;</span>
                 </p>
               </a>
               <ul class="tags">
@@ -107,14 +99,14 @@
               <a href="https://github.com/petrame/project-cluedo">
                 <img
                   class="project-img"
-                  src="./assets/cluedo2.png"
-                  alt="Cluedo game"
+                  src="./assets/cluedo.png"
+                  alt="project card"
                 />
                 <p class="summary">
                   <span class="red uppercase bold">Cluedo game.</span>
                   &nbsp; A responsive web page that randomly selects objects
                   from javascript arrays and objects. &nbsp;
-                  <span class="red bold">&raquo;</span>
+                  <span class="red bold" aria-hidden="true">&raquo;</span>
                 </p>
               </a>
               <ul class="tags">
@@ -125,14 +117,14 @@
             </article>
           </div>
 
-          <h3>Other projects</h3>
+          <h3 tabindex="0">Other projects</h3>
           <article>
             <a href="https://github.com/Technigo/project-food-turtles-1">
               <p class="summary">
                 <span class="red uppercase bold">Food review website.</span>
                 &nbsp; Mob programming project. A restaurant listing page based
                 on the Zomato API. &nbsp;
-                <span class="red bold">&raquo;</span>
+                <span class="red bold" aria-hidden="true">&raquo;</span>
               </p>
             </a>
             <ul class="tags">
@@ -149,7 +141,7 @@
                 <span class="red uppercase bold">Business site.</span>
                 &nbsp; A business site with a hero video, an accordion menu and
                 a sign up form. &nbsp;
-                <span class="red bold">&raquo;</span>
+                <span class="red bold" aria-hidden="true">&raquo;</span>
               </p>
             </a>
             <ul class="tags">
@@ -165,7 +157,7 @@
                 <span class="red uppercase bold">Pizzeria bot.</span>
                 &nbsp; Pair programming project. A bot that receives a customer
                 order and returns a delivery message. &nbsp;
-                <span class="red bold">&raquo;</span>
+                <span class="red bold" aria-hidden="true">&raquo;</span>
               </p>
             </a>
             <ul class="tags">
@@ -181,7 +173,7 @@
               <p class="summary">
                 <span class="red uppercase bold">News site.</span>
                 &nbsp; A responsive web site with news cards. &nbsp;
-                <span class="red bold">&raquo;</span>
+                <span class="red bold" aria-hidden="true">&raquo;</span>
               </p>
             </a>
             <ul class="tags">
@@ -194,7 +186,7 @@
 
       <!-- MY THOUGHTS SECTION -->
       <section class="portfolio-section my-thoughts max-width">
-        <h2>My thoughts</h2>
+        <h2 tabindex="0">My thoughts</h2>
         <div class="articles">
           <article class="my-thoughts-article">
             <a href="#">
@@ -208,7 +200,7 @@
                 wibbly-wobbly... timey-wimey... stuff. Sweet, maybe...
                 Passionate, I suppose... But don't ever mistake that for nice. I
                 don't want to go. Allons-y!
-                <span class="red bold">&raquo;</span>
+                <span class="red bold" aria-hidden="true">&raquo;</span>
               </p>
             </a>
           </article>
@@ -227,13 +219,13 @@
                 York. You can spend the rest of your life with me, but I can't
                 spend the rest of mine with you. I have to live on. Alone.
                 That's the curse of the Time Lords.
-                <span class="red bold">&raquo;</span>
+                <span class="red bold" aria-hidden="true">&raquo;</span>
               </p>
             </a>
           </article>
         </div>
 
-        <h3>More thoughts</h3>
+        <h3 tabindex="0">More thoughts</h3>
         <article class="more-thoughts-article">
           <a href="#">
             <p class="more-thoughts">
@@ -241,7 +233,7 @@
               <span class="bold">
                 Oh, I always rip out the last page of a book.
               </span>
-              <span class="red bold">&raquo;</span>
+              <span class="red bold" aria-hidden="true">&raquo;</span>
             </p>
           </a>
         </article>
@@ -253,7 +245,7 @@
               <span class="bold">
                 I'll tell you what, then: don't...step on any butterflies.
               </span>
-              <span class="red bold">&raquo;</span>
+              <span class="red bold" aria-hidden="true">&raquo;</span>
             </p>
           </a>
         </article>
@@ -262,9 +254,9 @@
       <!-- SKILLS SECTION -->
       <section class="portfolio-section grey skills">
         <div class="max-width">
-          <h2>Skills</h2>
+          <h2 tabindex="0">Skills</h2>
           <div class="skills-container">
-            <div class="skill-container">
+            <div class="skill-container" tabindex="0">
               <h3>Code</h3>
               <ul>
                 <li>Javascript ES6</li>
@@ -276,7 +268,7 @@
               </ul>
             </div>
 
-            <div class="skill-container">
+            <div class="skill-container" tabindex="0">
               <h3>Toolbox</h3>
               <ul>
                 <li>GitHub</li>
@@ -288,7 +280,7 @@
               </ul>
             </div>
 
-            <div class="skill-container">
+            <div class="skill-container" tabindex="0">
               <h3>Upcoming</h3>
               <ul>
                 <li>React</li>
@@ -298,7 +290,7 @@
               </ul>
             </div>
 
-            <div class="skill-container">
+            <div class="skill-container" tabindex="0">
               <h3>More</h3>
               <ul>
                 <li>Exploratory Testing</li>
@@ -313,7 +305,7 @@
 
       <!-- FOR MORE SECTION -->
       <section class="portfolio-section for-more">
-        <h2>for more</h2>
+        <h2 tabindex="0">for more</h2>
         <div class="icon-container red">
           <div class="wrapper">
             <a
@@ -356,11 +348,11 @@
 
     <!-- FOOTER -->
     <footer>
-      <h2>contact</h2>
+      <h2 tabindex="0">contact</h2>
       <ul>
-        <li>Petra Almgren</li>
-        <li>+4672 565 56 66</li>
-        <li>
+        <li tabindex="0">Petra Almgren</li>
+        <li tabindex="0">+4672 565 56 66</li>
+        <li tabindex="0">
           <a href="petra.almgren@b3.se">petra.almgren@b3.se</a>
         </li>
       </ul>
